@@ -19,7 +19,7 @@ var db = redis.createClient(
     'auth_pass': nconf.get('redisKey'),
     'return_buffers': true
   }
-).on('error', (err) => console.error('ERR:REDIS:', err));
+).on('error', (err) => console.error('ERR:REDIS:',  nconf.get('redisHost') + err));
 
 
 app.set('view engine', 'ejs');
