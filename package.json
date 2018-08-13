@@ -4,7 +4,7 @@
   "description": "This is technical portfolio page of me (Kumar Saraboji) created using HTML5/CSS3, node.js express.js & ReDiS",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,8 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "nconf": "^0.10.0",
     "redis": "^2.8.0",
     "redis-server": "^1.2.2"
-  },
-    "scripts": {"start": "node server.js"}
+  }
 }
