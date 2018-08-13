@@ -1,0 +1,33 @@
+{
+  "name": "kumar-saraboji-portfolio2",
+  "version": "1.0.0",
+  "description": "This is technical portfolio page of me (Kumar Saraboji) created using HTML5/CSS3, node.js express.js & ReDiS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarakuma/portfolio2-tech.git%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5B2.git"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "redis",
+    "node",
+    "express"
+  ],
+  "author": "Kumar Saraboji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarakuma/portfolio2-tech.git%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5B2/issues"
+  },
+  "homepage": "https://github.com/sarakuma/portfolio2-tech.git%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5BD%1B%5B2#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "redis": "^2.8.0",
+    "redis-server": "^1.2.2"
+  },
+    "scripts": {"start": "node server.js"}
+}
