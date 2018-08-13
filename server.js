@@ -19,11 +19,8 @@ var db = redis.createClient(
     'auth_pass': nconf.get('redisKey'),
     'return_buffers': true
   }
-);
+).on('error', (err) => console.error('ERR:REDIS:', err));
 
-db.on('error', (err) => {
-    console.log(`Error related to Redis db: ${err}`);
-})
 
 app.set('view engine', 'ejs');
 
@@ -51,7 +48,7 @@ app.get('/', (req, res) => {
 });;
 
 app.listen(PORT, () => {
-    console.log(`Express server started on port ${PORT}`, PORT);
+    console.log(`Express server started on port ${PORT}`);
 });
            
 module.exports = app;
