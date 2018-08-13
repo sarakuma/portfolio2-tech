@@ -5,7 +5,7 @@ var path = require('path');
 
 
 const PORT = process.env.PORT || 8080;
-const HOST = '127.0.0.1';
+//const HOST = '127.0.0.1';
 
 var app = express();
 var db = redis.createClient();
@@ -39,8 +39,8 @@ app.get('/', (req, res) => {
     };
 });;
 
-app.listen(PORT, HOST, () => {
-    console.log(`Express server started on port ${PORT} at ${HOST}`, PORT, HOST);
+app.listen(HOST, () => {
+    console.log(`Express server started on port ${PORT}`, PORT);
 });
            
 module.exports = app;
