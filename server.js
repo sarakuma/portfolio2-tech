@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
     };
 });;
 
-app.listen(HOST, () => {
+app.listen(PORT, () => {
     console.log(`Express server started on port ${PORT}`, PORT);
 });
            
