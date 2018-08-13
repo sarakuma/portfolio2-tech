@@ -14,12 +14,12 @@ var app = express();
 var db = redis.createClient(
     
     nconf.get('redisPort') || '6379',
-    nconf.get('redisHost') || '127.0.0.1',
+    nconf.get('redisHost') ,
     {
     'auth_pass': nconf.get('redisKey'),
     'return_buffers': true
   }
-).on('error', (err) => console.error('ERR:REDIS:',  nconf.get('redisHost') + err));
+).on('error', (err) => console.error('ERR:REDIS:',  err));
 
 
 app.set('view engine', 'ejs');
