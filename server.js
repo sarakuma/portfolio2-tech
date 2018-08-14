@@ -4,9 +4,7 @@ var ejs = require('ejs');
 var path = require('path');
 var nconf = require('nconf');
 
-
 const PORT = process.env.PORT || 8080;
-//const HOST = '127.0.0.1';
 
 nconf.argv().env().file('keys.json');
 
@@ -14,7 +12,7 @@ var app = express();
 var db = redis.createClient(
     
     nconf.get('redisPort') || '6379',
-    nconf.get('redisHost') ,
+    nconf.get('redisHost') || '127.0.0.1',
     {
     'auth_pass': nconf.get('redisKey'),
     'return_buffers': true
@@ -24,7 +22,6 @@ var db = redis.createClient(
 
 app.set('view engine', 'ejs');
 
-/*app.use(express.static(path.join(__dirname,'/../')));*/
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {

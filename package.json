@@ -14,8 +14,8 @@
     "html5",
     "css3",
     "redis",
-    "node",
-    "express"
+    "nodejs",
+    "expressjs"
   ],
   "author": "Kumar Saraboji",
   "license": "ISC",
